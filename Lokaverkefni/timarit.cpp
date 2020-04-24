@@ -1,21 +1,21 @@
 #include "timarit.h"
 
 Timarit::Timarit(){
-    this->tolublad = 0; 
+    this->tolublad = 0;
 };
 
-Timarit::Timarit(int id, std::string titill, int tolublad){
-    this->tolublad = tolublad;
+Timarit::Timarit(int id, string titill, int tolublad) : Safnkostur(id, titill){
+    this->tolublad = 0;
 };
 
 int Timarit::getTolublad(){
     return this->tolublad;
 };
 
-void Timarit::setHofundur(int tolublad){
+void Timarit::setTolublad(int tolublad){
     this->tolublad = tolublad;
 };
 
 void Timarit::prenta(){
-    std::cout << this->getId() << ", " << this->getTitill() << " Tölublað:" << this->getTolublad();
+    cout << this->getId() << ", " << this->getTitill() << ", tlb. " << this->getTolublad();
 };

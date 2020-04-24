@@ -7,8 +7,8 @@ class Timarit : public Safnkostur {
         int tolublad;
     public:
         Timarit();
-        Timarit(int id, std::string titill, int tolublad);
+        Timarit(int id, string titill, int tolublad);
         int getTolublad();
-        void setHofundur(int tolublad);
+        void setTolublad(int tolublad);
         void prenta();
 };

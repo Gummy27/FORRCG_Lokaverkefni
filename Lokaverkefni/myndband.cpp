@@ -4,18 +4,18 @@ Myndband::Myndband(){
     this->lengd = 0;
 };
 
-Myndband::Myndband(int id, std::string titill, int lengd){
+Myndband::Myndband(int id, string titill, int lengd) : Safnkostur(id, titill){
     this->lengd = lengd;
 };
 
 int Myndband::getLengd(){
-    return this->lengd;
+    return this->lengd; 
 };
 
-void Myndband::setHofundur(int lengd){
+void Myndband::setLengd(){
     this->lengd = lengd;
 };
 
 void Myndband::prenta(){
-    std::cout << this->getId() << ", " << this->getTitill() << " lengd:" << this->getLengd() << " min.";
+    cout << this->getId() << ", " << this->getTitill() << ", " << this->getLengd() << " min að lengd" << endl;
 };

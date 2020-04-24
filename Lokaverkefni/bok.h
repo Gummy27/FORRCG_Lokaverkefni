@@ -7,8 +7,8 @@ class Bok : public Safnkostur {
         std::string hofundur;
     public:
         Bok();
-        Bok(int id, std::string titill, std::string hofundur);
-        std::string getHofundur();
-        void setHofundur(std::string hofundur);
+        Bok(int id, string titill, string hofundur);
+        string getHofundur();
+        void setHofundur();
         void prenta();
 };

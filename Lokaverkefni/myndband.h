@@ -7,8 +7,8 @@ class Myndband : public Safnkostur {
         int lengd;
     public:
         Myndband();
-        Myndband(int id, std::string titill, int lengd);
+        Myndband(int id, string titill, int lengd);
         int getLengd();
-        void setHofundur(int lengd);
+        void setLengd();
         void prenta();
 };

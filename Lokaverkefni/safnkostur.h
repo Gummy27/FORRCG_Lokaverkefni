@@ -3,18 +3,21 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Safnkostur {
     private:
         int id;
-        std::string titill;
-
+        string titill;
     public:
         Safnkostur();
-        Safnkostur(int id, std::string titill);
+        Safnkostur(int id, string titill);
+
         int getId();
-        void setId();
-        std::string getTitill();
-        void setTitill(std::string titill);
+        string getTitill();
+
+        void setId(int id);
+        void setTitill(string titill);
+
         virtual void prenta();
-        virtual ~Safnkostur() {}
 };

@@ -4,18 +4,19 @@ Bok::Bok(){
     this->hofundur = "";
 };
 
-Bok::Bok(int id, std::string titill, std::string hofundur){
+Bok::Bok(int id, string titill, string hofundur) : Safnkostur(id, titill){
+    cout << "This constructor runs!" << endl;
     this->hofundur = hofundur;
 };
 
-std::string Bok::getHofundur(){
+string Bok::getHofundur(){
     return this->hofundur;
 };
 
-void Bok::setHofundur(std::string hofundur){
+void Bok::setHofundur(){
     this->hofundur = hofundur;
 };
 
 void Bok::prenta(){
-    std::cout << this->getId() << ", " << this->getTitill() << " eftir " << this->getHofundur();
+    cout << this->getId() << ", " << this->getTitill() << " eftir " << this->getHofundur() << endl;
 };
