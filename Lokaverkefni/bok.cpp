@@ -5,7 +5,6 @@ Bok::Bok(){
 };
 
 Bok::Bok(int id, string titill, string hofundur) : Safnkostur(id, titill){
-    cout << "This constructor runs!" << endl;
     this->hofundur = hofundur;
 };
 
@@ -13,7 +12,7 @@ string Bok::getHofundur(){
     return this->hofundur;
 };
 
-void Bok::setHofundur(){
+void Bok::setHofundur(string hofundur){
     this->hofundur = hofundur;
 };
 

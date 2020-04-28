@@ -12,7 +12,7 @@ int Myndband::getLengd(){
     return this->lengd; 
 };
 
-void Myndband::setLengd(){
+void Myndband::setLengd(int lengd){
     this->lengd = lengd;
 };
 

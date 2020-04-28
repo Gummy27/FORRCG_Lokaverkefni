@@ -17,5 +17,5 @@ void Timarit::setTolublad(int tolublad){
 };
 
 void Timarit::prenta(){
-    cout << this->getId() << ", " << this->getTitill() << ", tlb. " << this->getTolublad();
+    cout << this->getId() << ", " << this->getTitill() << ", tlb. " << this->getTolublad() << endl;
 };

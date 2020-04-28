@@ -6,23 +6,15 @@
 using namespace std;
 
 int main(){
-    Bokasafn klasi;
-    Bok* b = new Bok(3, "Englar Alheimsins", "Einar Már");
-    Bok* c = new Bok(1, "Sjálfstætt fólk", "Halli Lax");
-    Bok* d = new Bok(2, "Hella gay", "No one cares");
-    b->prenta();
-    c->prenta();
-    d->prenta();
-
-    cout << "-------------------" << endl;
-
-    klasi.setjaILista(b);
-    klasi.setjaILista(c);
-    klasi.setjaILista(d);
-    klasi.prentaAllaSafnkosti();
-
-    /*
     Bokasafn b;
+
+    Bok* c = new Bok(3, "Englar Alheimsins", "Einar Már");
+    Bok* d = new Bok(1, "Sjálfstætt fólk", "Halli Lax");
+    Bok* e = new Bok(2, "Hella gay", "No one cares");
+
+    b.setjaILista(c);
+    b.setjaILista(d);
+    b.setjaILista(e);
 
     string inntak;
     string skipun;
@@ -30,21 +22,22 @@ int main(){
     string titill;
     string hofundur;
     int lengd_tolublad;
-    int id, einkunn;
+    int id;
 
-   do {
+    do {
         cout << "Hvað viltu gera? ";
         getline(cin, inntak);
-        cout << inntak << endl;
+
         stringstream ss;
+        
         ss << inntak;
         ss >> skipun;
-        if(skipun == "skrá") {
+        if(skipun == "skrá" || skipun == "skra") {
             ss >> form >> id >> titill;
-            if(form == "bók") {
+            if(form == "bók" || form == "bok") {
                 ss >> hofundur;
                 b.skraBok(id, titill, hofundur);
-            } else if(form == "tímarit") {
+            } else if(form == "tímarit" || form == "timarit") {
                 ss >> lengd_tolublad;
                 b.skraTimarit(id, titill, lengd_tolublad);
             } else if(form == "myndband") {
@@ -55,26 +48,34 @@ int main(){
             }
         } else if(skipun == "skoða") { 
             ss >> id;
+            b.skodaSafnkost(id);
         } else if(skipun == "eyða") { 
             ss >> id;
-            b.afskraSafnkost(10);
+            b.afskraSafnkost(id);
         } else if(skipun == "breyta") { 
             ss >> form;
-            if(form == "titill") {
+            if(form == "titil") {
                 ss >> id >> titill;
-                b.breytatitilli(id, titill);
-            } else if(form == "einkunn") {
-                ss >> id >> einkunn;
-                b.breytaEinkunn(id, einkunn);
-            } else if(form == "eigandi") {
-                ss >> id >> titill;
-                b.breytaEigandi(id, titill);
+                b.breytaTitil(id, titill);
+            } else if(form == "höfundur" || form == "hofundur") {
+                ss >> id >> hofundur;
+                b.breytaHofundur(id, hofundur);
+            } else if(form == "lengd") {
+                ss >> id >> lengd_tolublad;
+                b.breytaLengd(id, lengd_tolublad);
+            } else if(form == "tölublað" || form == "tolublad") {
+                ss >> id >> lengd_tolublad;
+                b.breytaTolublad(id, lengd_tolublad);
             }
 
         } else if(skipun == "prenta") {
-            b.prenta();
+            b.prentaAllaSafnkosti();
+        } else if(skipun != "hætta"){
+            cout << "Óþekkt skipun! Reyndu aftur." << endl;
         }
+    cout << "----------------------" << endl;
     } while(skipun != "hætta");
-    */
+
+    cout << "Sjáumst seinna :)" << endl;    
     return 0;
 };
