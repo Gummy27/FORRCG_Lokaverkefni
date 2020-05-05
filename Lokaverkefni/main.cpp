@@ -70,6 +70,7 @@ int main(){
     cout << "----------------------" << endl;
     } while(skipun != "hætta");
 
+    b.vistaSafnosti();
     cout << "Sjáumst seinna :)" << endl;    
     return 0;
 };

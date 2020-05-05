@@ -18,47 +18,47 @@ Bókasafnið geymir safnkosti sína í röðuðum tengdum lista. Forritið býð
 
 ### Skrá:
 ##### Syntax: skrá *safnkost id titill sérstök_gögn*
-Skrá skipuninn skráir mismunandi safnkosti í bókasafnið. 
-Dæmi um virkni:
-      skrá bók 1 Eldar Halli
-      skrá myndband 2 funnycatvideo 2
-      skrá tímarit 3 Dv 3
+<p>Skrá skipuninn skráir mismunandi safnkosti í bókasafnið. </p>
+<p>Dæmi um virkni:</p>
+<p>      skrá bók 1 Eldar Halli</p>
+<p>      skrá myndband 2 funnycatvideo 2</p>
+<p>      skrá tímarit 3 Dv 3</p>
 
 ### Skoða:
 ##### Syntax: skoða *id*
-Skoða skipuninn tekur inn id á hlut og prentar hann út.
-Dæmi um virkni:
-      skoða 1
-      **1, Eldar eftir Halli**
+<p>Skoða skipuninn tekur inn id á hlut og prentar hann út.</p>
+<p>Dæmi um virkni:</p>
+<p>      skoða 1</p>
+<p>      **1, Eldar eftir Halli**</p>
  
  ### Eyða:
  ##### Syntax: eyða *id*
- Eyða skipuninn tekur inn id og eyðir samsvarandi safnkost.
- Dæmi um virkni:
-      eyða 1
-      **Hluturinn var skráður út úr bókasafninu!**
+<p> Eyða skipuninn tekur inn id og eyðir samsvarandi safnkost.</p>
+<p> Dæmi um virkni:</p>
+<p>      eyða 1</p>
+<p>      **Hluturinn var skráður út úr bókasafninu!**</p>
  
  ### Breyta:
  ##### Syntax: breyta *id upplýsingar nýja*
- Breyta skipuninn tekur inn id, form af upplýsingu og það sem kemur í stað þess.
- Dæmi um virkni:
-      breyta 1 titill Englar
-      **Titil bókarinnar hefur verið uppfærður.**
+<p> Breyta skipuninn tekur inn id, form af upplýsingu og það sem kemur í stað þess.</p>
+<p> Dæmi um virkni:</p>
+<p>      breyta 1 titill Englar</p>
+<p>      **Titil bókarinnar hefur verið uppfærður.**</p>
        
  ### Prenta:
  ##### Syntax: prenta
- Prenta skipuninn rennir í gegnum bókasafnið og prentar út alla safnkosti.
- Dæmi um virkni:
-      prenta
-      **1, Englar eftir Einar
-      2, Dv, tbl 12
-      3, funnycatvideo 10 min að lengd**
+<p> Prenta skipuninn rennir í gegnum bókasafnið og prentar út alla safnkosti.</p>
+<p> Dæmi um virkni:</p>
+<p>      prenta</p>
+<p>      **1, Englar eftir Einar</p>
+<p>      2, Dv, tbl 12</p>
+<p>      3, funnycatvideo 10 min að lengd**</p>
       
  ### Vista:
  ##### Syntax: vista
- vistar öll gögnin í skrár svo upplýsingarnar varðveitast.
- 
+ <p>vistar öll gögnin í skrár svo upplýsingarnar varðveitast.</p>
+
  ### Hætta:
  ##### Syntax: hætta
- Hættir í forritinu og í leiðinni vistar allar upplýsingar.
+ <p>Hættir í forritinu og í leiðinni vistar allar upplýsingar.</p>
       
