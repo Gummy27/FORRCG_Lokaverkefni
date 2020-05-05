@@ -29,30 +29,30 @@ Bókasafnið geymir safnkosti sína í röðuðum tengdum lista. Forritið býð
 <p>Skoða skipuninn tekur inn id á hlut og prentar hann út.</p>
 <p>Dæmi um virkni:</p>
 <p>      skoða 1</p>
-<p>      **1, Eldar eftir Halli**</p>
+<p>      <b>1, Eldar eftir Halli<b></p>
  
  ### Eyða:
  ##### Syntax: eyða *id*
 <p> Eyða skipuninn tekur inn id og eyðir samsvarandi safnkost.</p>
 <p> Dæmi um virkni:</p>
 <p>      eyða 1</p>
-<p>      **Hluturinn var skráður út úr bókasafninu!**</p>
+<p>      <b>Hluturinn var skráður út úr bókasafninu!</b></p>
  
  ### Breyta:
  ##### Syntax: breyta *id upplýsingar nýja*
 <p> Breyta skipuninn tekur inn id, form af upplýsingu og það sem kemur í stað þess.</p>
 <p> Dæmi um virkni:</p>
 <p>      breyta 1 titill Englar</p>
-<p>      **Titil bókarinnar hefur verið uppfærður.**</p>
+<p>      <b>Titil bókarinnar hefur verið uppfærður.</b></p>
        
  ### Prenta:
  ##### Syntax: prenta
 <p> Prenta skipuninn rennir í gegnum bókasafnið og prentar út alla safnkosti.</p>
 <p> Dæmi um virkni:</p>
 <p>      prenta</p>
-<p>      **1, Englar eftir Einar</p>
-<p>      2, Dv, tbl 12</p>
-<p>      3, funnycatvideo 10 min að lengd**</p>
+<p>      <b>1, Englar eftir Einar</b></p>
+<p>      <b>2, Dv, tbl 12</b></p>
+<p>      <b>3, funnycatvideo 10 min að lengd</b></p>
       
  ### Vista:
  ##### Syntax: vista
