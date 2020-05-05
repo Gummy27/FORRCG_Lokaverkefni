@@ -1,3 +1,7 @@
+# Myndband
+
+<p><a href="https://youtu.be/jF2Otkn_RTI"> Myndband </a></p>
+
 # Dagbók
 
 ### 24. Apríl 2020
