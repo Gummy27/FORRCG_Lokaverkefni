@@ -10,5 +10,6 @@ class Bok : public Safnkostur {
         Bok(int id, string titill, string hofundur);
         string getHofundur();
         void setHofundur(string hofundur);
+        void vista();
         void prenta();
 };

@@ -8,14 +8,6 @@ using namespace std;
 int main(){
     Bokasafn b;
 
-    Bok* c = new Bok(3, "Englar Alheimsins", "Einar Már");
-    Bok* d = new Bok(1, "Sjálfstætt fólk", "Halli Lax");
-    Bok* e = new Bok(2, "Hella gay", "No one cares");
-
-    b.setjaILista(c);
-    b.setjaILista(d);
-    b.setjaILista(e);
-
     string inntak;
     string skipun;
     string form;
@@ -70,6 +62,8 @@ int main(){
 
         } else if(skipun == "prenta") {
             b.prentaAllaSafnkosti();
+        } else if(skipun == "vista"){
+            b.vistaSafnosti();
         } else if(skipun != "hætta"){
             cout << "Óþekkt skipun! Reyndu aftur." << endl;
         }

@@ -10,5 +10,6 @@ class Myndband : public Safnkostur {
         Myndband(int id, string titill, int lengd);
         int getLengd();
         void setLengd(int lengd);
+        void vista();
         void prenta();
 };

@@ -26,6 +26,19 @@ void Safnkostur::setTitill(string titill){
     this->titill = titill;
 };
 
+void Safnkostur::vista(){
+    ofstream file;
+    file.open("test.txt", std::ios_base::app);
+
+    if(!file){
+        cout << "Villa kom upp! Bókin" << this->getTitill() << "var ekki vistuð!" << endl;
+    } else {
+        file << "s"                 << ","
+             << this->getId()       << ","
+             << this->getTitill()   << ",";
+    }
+}
+
 void Safnkostur::prenta(){
     cout << this->getId() << ", " << this->getTitill() << endl;
 };

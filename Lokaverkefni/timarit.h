@@ -10,5 +10,6 @@ class Timarit : public Safnkostur {
         Timarit(int id, string titill, int tolublad);
         int getTolublad();
         void setTolublad(int tolublad);
+        void vista();
         void prenta();
 };

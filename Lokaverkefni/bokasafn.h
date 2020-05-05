@@ -21,6 +21,8 @@ class Bokasafn {
         void breytaLengd(int id, int lengd_tolublad);
         void breytaTolublad(int id, int tolublad);
 
+        void vistaSafnosti();
+
         GognNode* leitaSafnkost(int id);
 
         void prentaAllaSafnkosti();

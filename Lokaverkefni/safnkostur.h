@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -19,5 +20,6 @@ class Safnkostur {
         void setId(int id);
         void setTitill(string titill);
 
+        virtual void vista();
         virtual void prenta();
 };
